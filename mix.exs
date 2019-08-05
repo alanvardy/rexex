@@ -8,6 +8,13 @@ defmodule Rexex.MixProject do
       elixir: "~> 1.5",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
+      test_coverage: [tool: ExCoveralls],
+      preferred_cli_env: [
+        coveralls: :test,
+        "coveralls.detail": :test,
+        "coveralls.post": :test,
+        "coveralls.html": :test
+      ],
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps()
@@ -42,7 +49,14 @@ defmodule Rexex.MixProject do
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      # Tooling
+      {:ex_check, ">= 0.0.0", only: :dev, runtime: false},
+      {:credo, "~> 1.1.0", only: [:dev, :test], runtime: false},
+      {:dialyxir, ">= 0.0.0", only: [:dev, :test], runtime: false},
+      {:sobelow, "~> 0.8", only: [:dev, :test], runtime: false},
+      {:excoveralls, "~> 0.10", only: :test, runtime: false},
+      {:ex_doc, "~> 0.21", only: :dev, runtime: false}
     ]
   end
 
