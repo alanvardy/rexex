@@ -1,6 +1,6 @@
 version: 2  # use CircleCI 2.0 instead of CircleCI Classic
 jobs:  # basic units of work in a run
-  ex_check:  # runs not using Workflows must have a `build` job as entry point
+  build:  # runs not using Workflows must have a `build` job as entry point
     parallelism: 1  # run only one instance of this job in parallel
     docker:  # run the steps with Docker
     # Find your dockerfile here https://github.com/CircleCI-Public/circleci-dockerfiles/tree/master/elixir/images
@@ -128,11 +128,11 @@ jobs:  # basic units of work in a run
   #               ssh-keyscan $SITE >> ~/.ssh/known_hosts
   #               git push dokku@$SITE:health master
 
-workflows:
-  version: 2
-  build-deploy:
-    jobs:
-      - ex_check
+# workflows:
+#   version: 2
+#   build-deploy:
+#     jobs:
+#       - ex_check
       # - system_test
       # - deploy:
       #     requires:
