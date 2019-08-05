@@ -1,3 +1,4 @@
+# credo:disable-for-this-file
 defmodule Rexex.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
@@ -26,10 +27,10 @@ defmodule Rexex.DataCase do
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Rexex.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Rexex.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(Repo, {:shared, self()})
     end
 
     :ok

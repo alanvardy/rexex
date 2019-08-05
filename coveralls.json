@@ -1,0 +1,20 @@
+{
+  "coverage_options": {
+    "minimum_coverage": 0
+  },
+  "skip_files": [
+    "error_helpers.ex",
+    "channel_case.ex",
+    "conn_case.ex",
+    "helpers.ex",
+    "endpoint.ex",
+    "application.ex",
+    "repo.ex",
+    "data_case.ex",
+    "policy.ex",
+    "rexex.ex",
+    "rexex_web.ex",
+    "pull_dokku_database.ex",
+    "lib/rexex_web/pow/messages.ex"
+  ]
+}
