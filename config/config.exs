@@ -15,7 +15,11 @@ config :rexex, RexexWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "mK9wX44eFjlfnVSiCrKcdZCaFy1FhRvrnnwsqX1EKf09TEg9VD7Jr6QJVgIN76RE",
   render_errors: [view: RexexWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Rexex.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: Rexex.PubSub, adapter: Phoenix.PubSub.PG2],
+  template_engines: [leex: Phoenix.LiveView.Engine],
+  live_view: [
+     signing_salt: "`mix phx.gen.secret 32`"
+   ]
 
 # Configures Elixir's Logger
 config :logger, :console,

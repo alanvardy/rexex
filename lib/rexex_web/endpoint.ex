@@ -43,4 +43,5 @@ defmodule RexexWeb.Endpoint do
     signing_salt: "XBzVaPb9"
 
   plug RexexWeb.Router
+  socket "/live", Phoenix.LiveView.Socket
 end
