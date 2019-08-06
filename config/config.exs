@@ -18,8 +18,8 @@ config :rexex, RexexWeb.Endpoint,
   pubsub: [name: Rexex.PubSub, adapter: Phoenix.PubSub.PG2],
   template_engines: [leex: Phoenix.LiveView.Engine],
   live_view: [
-     signing_salt: "`mix phx.gen.secret 32`"
-   ]
+    signing_salt: "`mix phx.gen.secret 32`"
+  ]
 
 # Configures Elixir's Logger
 config :logger, :console,

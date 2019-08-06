@@ -1,4 +1,5 @@
 defmodule RexexWeb.RegexLive do
+  @moduledoc "Shows live regex results"
   use Phoenix.LiveView
   import Phoenix.HTML.Form
 
@@ -18,14 +19,13 @@ defmodule RexexWeb.RegexLive do
       try do
         result = run_regex(regex, string)
 
-          socket
-          |> update(:val, &(&1 + 1))
-          |> update(:string, fn _x -> string end)
-          |> update(:regex, fn _x -> regex end)
-          |> update(:result, fn _x -> result end)
-
+        socket
+        |> update(:val, &(&1 + 1))
+        |> update(:string, fn _x -> string end)
+        |> update(:regex, fn _x -> regex end)
+        |> update(:result, fn _x -> result end)
       rescue
-          RuntimeError -> socket
+        RuntimeError -> socket
       end
 
     {:noreply, socket}
