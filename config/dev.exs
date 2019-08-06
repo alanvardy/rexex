@@ -61,7 +61,8 @@ config :rexex, RexexWeb.Endpoint,
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/rexex_web/{live,views}/.*(ex)$",
-      ~r"lib/rexex_web/templates/.*(eex)$"
+      ~r"lib/rexex_web/templates/.*(eex)$",
+      ~r{lib/my_app_web/live/.*(ex)$}
     ]
   ]
 
