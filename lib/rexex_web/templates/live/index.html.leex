@@ -1,0 +1,28 @@
+    <div>
+      <h1>Rexex Elixir Regex</h1>
+      <%= form_for :regex, "#", [phx_change: :activate], fn f -> %>
+      ~r/<%= text_input f, :regex, value: @regex %>/
+      <%= textarea f, :string, value: @string %>
+      <% end %>
+    </div>
+    <div>
+      <p><strong>Regex.match?</strong> <%= @match? %></p>
+      <p><strong>Regex.run</strong> <%= @run %></p>
+      <p>
+        <strong>Regex.scan</strong>
+        <%= @run %>
+      </p>
+      <p>
+        <strong>Regex.split</strong>
+        <%= @split %>
+      </p>
+      <p>
+        <strong>Regex.named_captures</strong>
+        <%= @named_captures %>
+      </p>
+    </div>
+    <%= render RexexWeb.GuideView, "metacharacters.html", [] %>
+    <%= render RexexWeb.GuideView, "generic.html", [] %>
+    <%= render RexexWeb.GuideView, "assertions.html", [] %>
+    <%= render RexexWeb.GuideView, "posix.html", [] %>
+    <%= link "Read the Erlang docs!", to: "http://erlang.org/doc/man/re.html", target: "_blank" %>

@@ -1,0 +1,80 @@
+<h3>Posix Character Classes</h3>
+<p>
+This uses names enclosed by [: and :] within the enclosing
+square brackets. For example, the following matches "0", "1", any alphabetic
+character, or "%":<br>
+
+<code>[01[:alpha:]%]</code>
+</p>
+<table>
+  <tr>
+    <td>alnum</td>
+    <td>
+      Letters and digits</td>
+  </tr>
+  <tr>
+    <td>alpha</td>
+    <td>
+      Letters</td>
+  </tr>
+  <tr>
+    <td>ascii</td>
+    <td>
+      Character codes 0-127</td>
+  </tr>
+  <tr>
+    <td>blank</td>
+    <td>
+      Space or tab only</td>
+  </tr>
+  <tr>
+    <td>cntrl</td>
+    <td>
+      Control characters</td>
+  </tr>
+  <tr>
+    <td>digit</td>
+    <td>
+      Decimal digits (same as \d)</td>
+  </tr>
+  <tr>
+    <td>graph</td>
+    <td>
+      Printing characters, excluding space</td>
+  </tr>
+  <tr>
+    <td>lower</td>
+    <td>
+      Lowercase letters</td>
+  </tr>
+  <tr>
+    <td>print</td>
+    <td>
+      Printing characters, including space</td>
+  </tr>
+  <tr>
+    <td>punct</td>
+    <td>
+      Printing characters, excluding letters, digits, and space</td>
+  </tr>
+  <tr>
+    <td>space</td>
+    <td>
+      Whitespace (the same as \s from PCRE 8.34)</td>
+  </tr>
+  <tr>
+    <td>upper</td>
+    <td>
+      Uppercase letters</td>
+  </tr>
+  <tr>
+    <td>word</td>
+    <td>
+      "Word" characters (same as \w)</td>
+  </tr>
+  <tr>
+    <td>xdigit</td>
+    <td>
+      Hexadecimal digits</td>
+  </tr>
+</table>

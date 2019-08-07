@@ -1,4 +1,5 @@
 defmodule RexexWeb.PageControllerTest do
+  @moduledoc false
   use RexexWeb.ConnCase
 
   test "GET /", %{conn: conn} do

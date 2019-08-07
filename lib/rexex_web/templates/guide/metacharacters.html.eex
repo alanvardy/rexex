@@ -1,0 +1,60 @@
+<h3>Metacharacters</h3>
+<p>
+  The power of regular expressions comes from the ability to include
+  alternatives and repetitions in the pattern. These are encoded in
+  the pattern by the use of metacharacters, which do not stand for
+  themselves but instead are interpreted in some special way.
+</p>
+<p>
+  Two sets of metacharacters exist: those that are recognized anywhere
+  in the pattern except within square brackets, and those that are
+  recognized within square brackets. Outside square brackets, the
+  metacharacters are as follows:
+</p>
+<table>
+  <tr>
+    <td>\</td>
+    <td>General escape character with many uses</td>
+  </tr>
+  <tr>
+    <td>.</td>
+    <td>Match any character except newline (by default)</td>
+  </tr>
+  <tr>
+    <td>[</td>
+    <td>Start character class definition</td>
+  </tr>
+  <tr>
+    <td>|</td>
+    <td>Start of alternative branch</td>
+  </tr>
+  <tr>
+    <td>(</td>
+    <td>Start subpattern</td>
+  </tr>
+  <tr>
+    <td>)</td>
+    <td>End subpattern</td>
+  </tr>
+  <tr>
+    <td>?</td>
+    <td>Extends the meaning of (, also 0 or 1 quantifier, also quantifier minimizer</td>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>0 or more quantifiers</td>
+  </tr>
+  <tr>
+    <td>+</td>
+    <td>1 or more quantifier, also "possessive quantifier"</td>
+  </tr>
+  <tr>
+    <td>{</td>
+    <td>Start min/max quantifier</td>
+  </tr>
+</table>
+<p>
+  Part of a pattern within square brackets is called a "character
+  class". The following are the only metacharacters in a character
+  class:
+</p>
