@@ -34,12 +34,13 @@ defmodule Rexex.Expression do
   def convert(value) when is_map(value) do
     value =
       value
-      |> Map.keys
+      |> Map.keys()
       |> Enum.map(fn key -> "\"#{key}\" => \"#{value[key]}\"" end)
       |> Enum.join(", ")
 
     "%{#{value}}"
   end
+
   def convert(value) when is_list(value) do
     value =
       value
