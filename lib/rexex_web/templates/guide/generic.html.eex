@@ -1,0 +1,43 @@
+<h3>Generic Character Types</h3>
+<table>
+  <tr>
+    <td>\d</td>
+    <td>Any decimal digit</td>
+  </tr>
+  <tr>
+    <td>\D</td>
+    <td>Any character that is not a decimal digit</td>
+  </tr>
+  <tr>
+    <td>\h</td>
+    <td>Any horizontal whitespace character</td>
+  </tr>
+  <tr>
+    <td>\H</td>
+    <td>Any character that is not a horizontal whitespace character</td>
+  </tr>
+  <tr>
+    <td>\s</td>
+    <td>Any whitespace character</td>
+  </tr>
+  <tr>
+    <td>\S</td>
+    <td>Any character that is not a whitespace character</td>
+  </tr>
+  <tr>
+    <td>\v</td>
+    <td>Any vertical whitespace character</td>
+  </tr>
+  <tr>
+    <td>\V</td>
+    <td>Any character that is not a vertical whitespace character</td>
+  </tr>
+  <tr>
+    <td>\w</td>
+    <td>Any "word" character</td>
+  </tr>
+  <tr>
+    <td>\W</td>
+    <td>Any "non-word" character</td>
+  </tr>
+</table>

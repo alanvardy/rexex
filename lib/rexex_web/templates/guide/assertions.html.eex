@@ -1,0 +1,27 @@
+<h3>Simple Assertions</h3>
+<table>
+  <tr>
+    <td>\b</td>
+    <td>Matches at a word boundary.</td>
+  </tr>
+  <tr>
+    <td>\B</td>
+    <td>Matches when not at a word boundary.</td>
+  </tr>
+  <tr>
+    <td>\A</td>
+    <td>Matches at the start of the subject.</td>
+  </tr>
+  <tr>
+    <td>\Z</td>
+    <td>Matches at the end of the subject, and before a newline at the end of the subject.</td>
+  </tr>
+  <tr>
+    <td>\z</td>
+    <td>Matches only at the end of the subject.</td>
+  </tr>
+  <tr>
+    <td>\G</td>
+    <td>Matches at the first matching position in the subject.</td>
+  </tr>
+</table>
