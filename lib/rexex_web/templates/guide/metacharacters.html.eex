@@ -58,3 +58,35 @@
   class". The following are the only metacharacters in a character
   class:
 </p>
+<table>
+  <tr>
+    <td>\</td>
+    <td>
+      General escape character
+    </td>
+  </tr>
+  <tr>
+    <td>^</td>
+    <td>
+      Negate the class, but only if the first character
+    </td>
+  </tr>
+  <tr>
+    <td>-</td>
+    <td>
+      Indicates character range
+    </td>
+  </tr>
+  <tr>
+    <td>[</td>
+    <td>
+      Posix character class (only if followed by Posix syntax)
+    </td>
+  </tr>
+  <tr>
+    <td>]</td>
+    <td>
+      Terminates the character class
+    </td>
+  </tr>
+</table>
