@@ -1,9 +1,8 @@
 defmodule RexexWeb.RegexLive do
   @moduledoc "Shows live regex results"
   use Phoenix.LiveView
-  import Phoenix.HTML.Form
-  alias RexexWeb.LiveView
   alias Rexex.Expression
+  alias RexexWeb.LiveView
 
   def render(assigns) do
     LiveView.render("index.html", assigns)

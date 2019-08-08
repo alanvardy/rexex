@@ -23,12 +23,10 @@ defmodule Rexex.Expression do
   end
 
   def do_regex(function, regex, string) do
-    try do
-      result = apply(Regex, function, [~r/#{regex}/, string])
-      {function, result}
-    rescue
-      _ -> :error
-    end
+    result = apply(Regex, function, [~r/#{regex}/, string])
+    {function, result}
+  rescue
+    _ -> :error
   end
 
   def convert(value) when is_map(value) do
